@@ -12,12 +12,12 @@
 
 ## [Docker](https://github.com/keepinmindsh/tech-education/blob/main/07_docker/README.md) 
 
-## [Kotlin](https://github.com/keepinmindsh/tech-education/blob/main/08_kotlin/README.md
+## [Kotlin](https://github.com/keepinmindsh/tech-education/blob/main/08_kotlin/README.md)
 
-## [AWS]https://github.com/keepinmindsh/tech-education/blob/main/09_aws/README.md
+## [AWS](https://github.com/keepinmindsh/tech-education/blob/main/09_aws/README.md)
 
-## [Design Pattern]https://github.com/keepinmindsh/tech-education/blob/main/10_designpattern/README.md
+## [Design Pattern](https://github.com/keepinmindsh/tech-education/blob/main/10_designpattern/README.md)
 
-## [OOP Architecture]https://github.com/keepinmindsh/tech-education/blob/main/11_oop_architecture/README.md
+## [OOP Architecture](https://github.com/keepinmindsh/tech-education/blob/main/11_oop_architecture/README.md)
 
-## [Developer Guide]https://github.com/keepinmindsh/tech-education/blob/main/12_developer_guide/README.md
+## [Developer Guide](https://github.com/keepinmindsh/tech-education/blob/main/12_developer_guide/README.md)
