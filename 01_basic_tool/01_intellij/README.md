@@ -152,3 +152,141 @@ Win/Linux - Shift + Ctrl + Enter
 MacOS - ⇧ + ⌘ + Enter
 ```
 
+- **현재 파일의 서식을 프로젝트 표준에 맞춰줍니다.**
+
+```text
+Win/Linux - Ctrl + Alt + L 
+MacOS - ⌥ + ⌘ + L
+```
+
+- **모든 리팩토링 항목을 표시합니다.**
+
+```text
+Win/Linux - Shift + Ctrl + Alt + T
+MacOS - ⌃ + T
+```
+
+- **액션을 검색합니다.**
+  - IntelliJ의 모든 액션을 검색할 수 있습니다. 
+  - 해당 메뉴에서는 액션 뿐만 아니라 단축키도 표시되므로 단축키를 익히고 연습할 수도 있습니다. 
+
+```text
+Win/Linux - Shift + Ctrl + A 
+MacOS - ⇧ + ⌘ + A
+```
+
+- **무엇이든 검색 가능한 검색 창이 표시됩니다.**
+  - 검색 창에서 기본적으로 최근 파일이 표시되므로 ( Ctrl + E / ⌘ + E ) 대신 이 창을 활용할 수도 있습니다. 
+  - 검색 창은 명령어도 지원합니다. 
+  - Appearance(모양) 설정을 검색할 수 있습니다. 
+
+```text
+Shift + Shift 
+```
+
+- **해당 파일의 File Structure를 표시합니다.**
+  - Win/Linux - Alt + 7
+  - MacOS - ⌥ + 7
+
+```text
+Win/Linux - Ctrl + F12
+MacOS - ⌘ + F12
+```
+
+- **해당 파일을 복사한다.**
+
+```text
+F5
+```
+
+- **해당 파일을 이동시킨다.**
+
+```text
+F6
+```
+
+- **변수를 추출한다.**
+  - 커서의 위치에 추출할 수 있는 변수이 존재할 경우, 값을 추출한다. 
+
+```text
+Win/Linux - Ctrl + Alt + V
+MacOS - ⌥ + ⌘ + V
+```
+
+- **필드를 추출한다.**
+  - 변수가 정의된 Scope의 범위에 따라 변수를 Class 멤버 변수로 추출 할 수 있다. 
+
+```text
+Win/Linux - Ctrl + Alt + F
+MacOS - ⌥ + ⌘ + F
+```
+
+- **상수를 추출한다.**
+  - 변수/상수가 정의된 Scope의 범위에 따라 변수/상수를 Class의 상수로 추출할 수 있다.  
+
+```text
+Win/Linux - Ctrl + Alt + C
+MacOS - ⌥ + ⌘ + C
+```
+
+- **메소드를 추출한다.**
+  - 지정된 블록에 대해서 메소드를 추출한다. 
+
+```text
+Win/Linux - Ctrl + Alt + M
+MacOS - ⌥ + ⌘ + M
+```
+
+- **메소드의 파라미터로 추출한다.**
+  - 메소드 내에 정의된 변수를 메소드의 파라미터로 추출할 수 있다. 
+
+```text
+Win/Linux - Ctrl + Alt + P
+MacOS - ⌥ + ⌘ + P
+``` 
+
+- **실행 구성에 대한 실행**
+  - Shift + F10 / ⌃ + R - 마지막으로 실행했던 실행 구성 실행 
+  - Ctrl + Shift + F10 / ⌃ + ⇧ + R - 현재 커서가 있는 파일에 대한 실행 구성 실행 
+
+```text
+Win/Linux - Ctrl + Shift + F10/Shift + F10
+MacOS - ⌃ + ⇧ + R/⌃ + R
+```
+
+- **탭에 대한 왼쪽/오른쪽 이동**
+
+```text
+Win/Linux - Alt + ← / Alt + → 
+MacOS - ⌘ + ⇧ + [  /  ⌘ + ⇧ + ]
+```
+
+- **라인 단위 옮기기**
+
+```text
+Win/Linux: Alt + Shift + ↑↓
+MacOS: ⌥ + ⇧ + ↑↓
+```
+
+- **구문 안에서만 라인 이동 ( 메서드를 벗어날 수 없음 )**
+
+```text
+Win/Linux: Ctrl + Shift + ↑↓
+MacOS: ⌘ + ⇧ + ↑↓
+```
+
+- **메소드의 파라미터 인자 값 즉시 보기**
+
+```text
+Win/Linux: Ctrl + P
+MacOS: ⌘ + P
+```
+
+- **코드 구현부 즉시 보기**
+
+```text
+Win/Linux: Ctrl + Shift+ i
+MacOS: ⌥ + i
+```
+
+> [IntelliJ Shortcuts 링크](https://www.jetbrains.com/help/idea/2022.1/discover-intellij-idea.html)
