@@ -9,6 +9,18 @@
 | ⌥  | Option 키  |일부 Apple 키보드의 경우 'alt'가 표시되어 있습니다.|
 | ⇧  | Shift 키  ||
 
+## Setting
+
+- Darcula Setting 
+
+## Plugins
+
+- [Material UI](https://plugins.jetbrains.com/plugin/8006-material-theme-ui)
+- [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x)
+- [Grep Console](https://plugins.jetbrains.com/plugin/7125-grep-console/)
+- [.ignore](https://plugins.jetbrains.com/plugin/7495--ignore/)
+- [Rainbow Brackets](https://plugins.jetbrains.com/plugin/10080-rainbow-brackets)
+
 ## Shortcuts  
 
 - **IDE Setting 열기** 
