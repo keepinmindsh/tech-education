@@ -1,0 +1,1 @@
+## [IntelliJ - IDEA](https://github.com/keepinmindsh/tech-education/blob/main/00_basic_tool/01_intellij/README.md)
