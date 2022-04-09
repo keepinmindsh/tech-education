@@ -6,7 +6,7 @@
   - Visual Studio Code 
 - Basic 
   - Development Basic 
-    - Notation 
+    - Binary
     - I/O 
     - Network
   - Clean Code
