@@ -238,8 +238,18 @@ try {
 - PushBackReader 
 
 # NIO 
-JDK4부터 java.io  패키지의 성능을 보강하기 위해 java.nio 패키지가 추가되었다. 그리고 뒤 이어서, JDK7 부터는 NIO.2 API가 java.nio.file 에 묶여서 추가되었다.
+JDK4부터 java.io  패키지의 성능을 보강하기 위해 java.nio 패키지가 추가되었다.   
+그리고 뒤 이어서, JDK7 부터는 NIO.2 API가 java.nio.file 에 묶여서 추가되었다.
 
+Java NIO는 New Input/Output 약자로 채널(Channel)이 양방향 버퍼를 통해 외부 데이터와 통신한다.   
+즉, NIO는 IO와 달리 읽기/쓰기를 하나의 통로로 해결한다.
+
+### NIO의 가장 큰 특징으로 비동기 / Non-Blocking 방식을 지원
+- **Non-Blocking Model 이란 I/O 작업이 진행되는 동안 유저 프로세스의 작업을 중단시키지 않는 방식이다.**
+- **비동기(Asynchronous) 이란 I/O 작업이 진행되는 동안 유저 프로세스는 관심이 없다.** 
+  그저 자신의 일을 하다가 이벤트 핸들러에 의해 알림(notify)이 오면 처리하는 방식이다
+
+### 특징 비교
 
 | **구분** | **IO** | **NIO** |
 | ------------- | ------------- | ------------- |
