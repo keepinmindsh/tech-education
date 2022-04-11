@@ -65,9 +65,9 @@ CPU의 대기를 극복하기 위해 나온 방식으로 장치를 확인하기 
 
 내 외부 장치와 프록그램 사이의 연결 통로로, 두 대상을 연결하고 데이터를 전송할 때 사용되는 통로이다. 
 
-![Input Stream](https://github.com/keepinmindsh/tech-education/blob/main/assets/Input_Stream.png)
+![Input Stream](https://github.com/keepinmindsh/tech-education/blob/main/assets/Input_Stream.gif)
 
-![Output Stream](https://github.com/keepinmindsh/tech-education/blob/main/assets/Output_Stream.png)
+![Output Stream](https://github.com/keepinmindsh/tech-education/blob/main/assets/Output_Stream.gif)
 
 ##### 스트림의 특징
 - 단방향 통신으로 하나의 스트림으로 입출력을 동시에 할 수 없다. 
