@@ -380,3 +380,10 @@ public static String tryCatchResource(String url) throws IOException {
     }
 }
 ```
+
+# NIO with Server 
+
+![Basic NIO Server](https://github.com/keepinmindsh/tech-education/blob/main/assets/nio_process.png)
+
+
+> 참조 : https://www.slideshare.net/kslisenko/networking-in-java-with-nio-and-netty-76583794
