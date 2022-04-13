@@ -58,9 +58,9 @@
 
 # OSI 7 계층 
 
-### UPPER Layer 
+## UPPER Layer 
 
-##### Layer 7
+### Layer 7
 
 - 응용 계층 ( Application Layer )
 
@@ -68,7 +68,7 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 - 데이터 단위 : Data
 
-##### Layer 6
+### Layer 6
 
 - 표현 계층 ( Presentation Layer )
 
@@ -76,7 +76,7 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 - 데이터 단위 : Data
 
-##### Layer 5
+### Layer 5
 
 - 세션 계층 ( Session Layer )
 
@@ -84,9 +84,9 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 - 데이터 단위 : Data
 
-### Lower Layer 
+## Lower Layer 
 
-##### Layer 4
+### Layer 4
 
 - 전송 계층 ( Transport Layer )
 
@@ -94,7 +94,7 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 - 데이터 단위 : Segments
 
-##### Layer 3
+### Layer 3
 
 - 네트워크 계층 ( Network Layer )
 
@@ -104,7 +104,7 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 - 데이터 단위 : Packets
 
-##### Layer 2 
+### Layer 2 
 
 - 데이터 링크 계층 ( Data Link Layer )
 
@@ -112,7 +112,7 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 - 데이터 단위 : Frames
 
-##### Layer 1
+### Layer 1
 
 - 물리 계층 ( Physical Layer )
 
