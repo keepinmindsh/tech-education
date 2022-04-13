@@ -50,7 +50,7 @@
 도메인 이름 시스템(DNS)은 사람이 읽을 수 있는 
 도메인 이름(예: www.amazon.com)을 머신이 읽을 수 있는 IP 주소(예: 192.0.2.44)로 변환합니다.
 
-![]()
+![DNS Flow](https://github.com/keepinmindsh/tech-education/blob/main/assets/dns_flow.png)
 
 1. 사용자가 웹 브라우저를 열어 주소 표시줄에 www.example.com을 입력하고 Enter 키를 누릅니다.
 2. www.example.com에 대한 요청은 일반적으로 케이블 인터넷 공급업체, DSL 광대역 공급업체 또는 기업 네트워크 같은 인터넷 서비스 
@@ -173,4 +173,5 @@ OSI의 최상위 7계층인 응용 계층은 사용자 또는 어플리케이션
 
 
 
-> 참조 : https://aws.amazon.com/ko/route53/what-is-dns/
+> 참조 : https://aws.amazon.com/ko/route53/what-is-dns/  
+> 참조 : 성공과 실패를 결정하는 1%의 네트워크 원리 
