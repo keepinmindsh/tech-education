@@ -3,7 +3,7 @@
 컴퓨터 네트워크는 컴퓨터와 컴퓨터가 연결되어 서로 정보를 주고 받을 수 있는 물리적인 인프라를 말합니다.   
 이러한 컴퓨터 네트워크는 하드웨어와 운영체제 그리고 응용 소프트웨어의 결합으로 동작하면 표준화된 규격을 통해 정의되어 있습니다.
 
-![Network_Flow]()
+![Network_Flow](https://github.com/keepinmindsh/tech-education/blob/main/assets/Network_Flow.png)
 
 - 브라우저 
   - HTTP 리퀘스트 메시지를 작성한다. 
@@ -52,7 +52,7 @@
 패킷은 ‘헤더’와 ‘데이터’의 두 부분으로 구성됩니다.  
 헤더는 수신처를 나타내는 주소 등의 제어 정보가 들어 있는데, 이 부분은 택배의 전표와 같은 것입니다. 그리고 그 뒤에 의뢰처에서 의뢰한 데이터가 이어지는데, 이것이 화물의 내용물에 해당합니다.
 
-![Packet]()
+![Packet](https://github.com/keepinmindsh/tech-education/blob/main/assets/packets.png)
 
 헤더에 기록된 수신처 정보를 결합하여 패킷의 목적지를 판단하고 여러 곳으로 분배합니다. 
 
