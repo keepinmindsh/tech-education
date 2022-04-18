@@ -10,7 +10,7 @@
     - I/O 
     - Network
   - Clean Code
-    - 깨끗한 코드 / 의미 있는 이름 / 함수 / 주석 
+    - [깨끗한 코드 / 의미 있는 이름 / 함수 / 주석](https://github.com/keepinmindsh/tech-education/blob/main/01_basic/04_CleanCode/README.md) 
     - 객체와 자료 구조 / 오류 처리 / 클래스 / 시스템 
     - 창발성 / 동시성 
 - Java
