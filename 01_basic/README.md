@@ -3,3 +3,5 @@
 ## [I/O](https://github.com/keepinmindsh/tech-education/blob/main/01_basic/02_IO/README.md)
 
 ## [NETWORK](https://github.com/keepinmindsh/tech-education/blob/main/01_basic/03_Network/README.md)
+
+## [Clean Code](https://github.com/keepinmindsh/tech-education/blob/main/01_basic/04_CleanCode/README.md)
