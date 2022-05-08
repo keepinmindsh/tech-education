@@ -230,8 +230,8 @@ public class EmployeeFactoryImpl implements EmployeeFactory {
 }
 ```
 
-### 생성자(Constructor)를 중복 정의할 때 정적 팩토리 메서드를 사용한다. 
-  - 정적 팩터리 메서드를 사용하면, 생성자에 비해서 가독성이 높아진다
+### 생성자(Constructor)를 중복 정의할 때 정적 팩토리 메서드를 사용한다.
+- 정적 팩터리 메서드를 사용하면, 생성자에 비해서 가독성이 높아진다
 
 ```java
 public class WarpCharacter {
@@ -249,7 +249,7 @@ public class WarpCharacter {
 }   
 ```
 
-  - 정적 팩터리 메서드를 사용하면, 다형성의 원칙에 따라 하위 자료형을 사용하게 만들 수 있다
+- 정적 팩터리 메서드를 사용하면, 다형성의 원칙에 따라 하위 자료형을 사용하게 만들 수 있다
 
 ```java
 public interface Airship {
@@ -266,6 +266,22 @@ public class Arbiter implements Airship {
     public void Retreat() {}
 
     public void Destroy() {}
+}
+
+public class Interceptor implements Airship {
+  public void Attack() {}
+
+  public void Retreat() {}
+
+  public void Destroy() {}
+}
+
+public class Scouter implements Airship {
+  public void Attack() {}
+
+  public void Retreat() {}
+
+  public void Destroy() {}
 }
 
 public class WarpCharacter {
@@ -476,3 +492,6 @@ class LineWidthHistogram {
   }
 }
 ```
+
+> 다형성  : 다형성이란? 생물 같은 종의 생물이면서도 어떤 형태나 형질이 다양하게 나타나는 현상. 예를 들면 암수에 따라 크기, 형태,   
+> 색깔 따윈가 차이 나는 것이다. 
