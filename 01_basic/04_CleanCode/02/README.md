@@ -305,4 +305,16 @@ class Sample {
 - DTO( Data Transfer Object ) : VO로 바꿔 말할 수 있는데, 계층간 데이터 교환을 자바빈즈를 말한다. 
   - 여기서 계층간은 컨트롤러, 뷰, 비즈니스 계층을 말하며 각 계층 간의 데이터 교환을 위한 객체 
   - 데이터 베이스와 통신하거나 소켓에서 받은 메시지의 구문을 분석할 때 유용하다. 
-  - 데이터 베이스에 저장된 가공되지 않은 정보를 애플리케이션 코드에서 사용할 객체로 변환하는 일련의 단계에서 가장 처음으로 사용하는 구조체. 
+  - 데이터 베이스에 저장된 가공되지 않은 정보를 애플리케이션 코드에서 사용할 객체로 변환하는 일련의 단계에서 가장 처음으로 사용하는 구조체.
+
+# Java 내의 규칙 
+
+#### 오류코드 보다는 예외를 사용하라. 
+
+```java
+class Sample {
+    private DeviceHandle getHandle(DeviceId id){
+        throw new DeviceShutdownError("Invalid handle for : " + id.toString());
+    }    
+}
+```
