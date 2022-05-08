@@ -313,8 +313,127 @@ class Sample {
 
 ```java
 class Sample {
-    private DeviceHandle getHandle(DeviceId id){
+    private DeviceHandle getHandle(DeviceId id) throws Exception{
         throw new DeviceShutdownError("Invalid handle for : " + id.toString());
     }    
 }
 ```
+
+#### Try-Catch-Finally
+
+예외에서 프로그램 안에다 범위를 정의한다는 사실은 매우 흥미롭다.   
+try-catch-finally 문에서 try 블록에 들어가는 코드를 실행하면   
+어느 시점에서든 실행이 중단된 후 catch 블록으로 넘어갈 수 있다.  
+
+어떤 면에서 try 블록은 트랜잭션과 비슷하다.  
+try 블록에서 무슨 일이 생기든지 catch 블록은 프로그램 상태를 일관성 있게 유지해야 한다.    
+그러므로 예외악 발생할 코드를 짤 때는 try-catch-finally 문으로 시작하는 편이 낫다.  
+그러면 try 블록에서 무슨일이 생기든지 호출자가 기대하는 상태를 정의하기 쉬워진다.
+
+- Try-Catch-Finally 를 사용하는 예제 
+
+```java
+class Sample{
+    
+  @Test(expected = StorageException.class)
+  public void retrieveSectionShouldThrowOnInvalidFileName(){
+    sectionStore.retrieveSection("invalid - file");
+  }
+
+  public List<RecordedGrip> retrieveSection(String sectionName){
+    try{
+      FileInputStream stream = new FileInputStream(sectionName);
+      stream.close();
+
+    }catch(FileNotFoundException e){
+      throw new StorageException("retrieval error", e);
+    }
+
+    return new ArrayList<RecordedGrip>();
+  }
+}
+```
+
+- Try-with-Resources 활용시 
+
+```java
+class Sample {
+  public static void viewTable(Connection con) throws SQLException {
+
+    String query = "select COF_NAME, SUP_ID, PRICE, SALES, TOTAL from COFFEES";
+
+    try (Statement stmt = con.createStatement()) {
+      ResultSet rs = stmt.executeQuery(query);
+
+      while (rs.next()) {
+        String coffeeName = rs.getString("COF_NAME");
+        int supplierID = rs.getInt("SUP_ID");
+        float price = rs.getFloat("PRICE");
+        int sales = rs.getInt("SALES");
+        int total = rs.getInt("TOTAL");
+
+        System.out.println(coffeeName + ", " + supplierID + ", " +
+                price + ", " + sales + ", " + total);
+      }
+    } catch (SQLException e) {
+      JDBCTutorialUtilities.printSQLException(e);
+    }
+  }    
+}
+
+```
+
+#### 미확인 예외를 사용하라. 
+
+확인된 예외는 OCP를 위반한다.  
+메서드에서 확인된 예외를 던졌는데 catch 블록이 세 단계 위에 있다면 그 사이 메서드 모두가 선언부에 해당 예외를 정의해야 한다.   
+즉, 하위 단계에서 코드를 변경하면 상위 단계 메서드 선언부를 전부 고쳐야 한다는 말이다.   
+확인된 예외를 위해서 메서드에 선언하는 구체적인 예외는 캡슐화를 깨트린다.  
+
+```java
+class Sample {
+  public static void main(String[] args) throws Exception {
+      try {
+          handle();      
+      }catch (Exception exception){
+          throw new Exception();
+      }
+  }
+  
+  private static void handle() throws Exception {
+      try {
+          doSomething();
+      }catch (Exception exception){
+          throw new Exception();
+      }
+  }
+  
+  private static void doSomething(){
+    System.out.println("Print Sample");
+  }
+}
+```
+#### 예외에 의미를 제공하라.
+
+예외를 던질때는 전수 상황을 충분히 덧붙인다.   
+그러면 오류가 발생한 원인과 위치를 찾기가 쉬워진다.   
+자바는 모든 예외에 호출 스택을 제공한다.  
+하지만 실패한 코드의 의도를 파악하라면 호출 스택 만으로 부족하다.   
+오류 메세지에 정보를 담아 예외와 함께 던진다. 실패한 연산 이름과 실패 유형도 언급한다. 
+
+```java
+class Sample{
+  public static void main(String[] args) {
+    doWithException();
+  }
+  
+  private void doWithException() throws Exception{
+      try{
+          File file = new File("/Users/dream/download/read.txt");
+      }catch (Exception exception){
+          throw new CustomException("Exact Error");
+      }
+  }
+}
+```
+
