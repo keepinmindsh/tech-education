@@ -3,17 +3,21 @@
 추상 인터페이스를 제공해 사용자가 구현을 모른채 자료의 핵심을 조작할 수 있어야 진정한 의미의 추상 클래스다. 
 
 ```java
+
 public interface Star {
     public void blingbling();
 }
+
 ```
 
 ```java
+
 public class Sirius implements Star {
     public void blingbling(){
         System.out.println("시리우스");
     }
 }
+
 ```
 자료를 세세하게 공개하기 보다는 추상적인 개념으로 표현하는 것이 좋다. 
 
