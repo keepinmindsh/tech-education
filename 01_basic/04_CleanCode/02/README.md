@@ -21,6 +21,7 @@ public class Sirius implements Star {
 ```
 자료를 세세하게 공개하기 보다는 추상적인 개념으로 표현하는 것이 좋다. 
 
+
 > [추상화(Abstraction)](https://github.com/keepinmindsh/dream_tech_education/blob/main/00_mind/dv_basic/README.MD)
 
 # 객체지향/절차지향의 상호 보완적인 관계 
