@@ -62,6 +62,51 @@ public class MainTest{
 
 # 팩토리의 필요성
 
+- 때로는 객체가 생성되는 시점을 애플리케이션이 결정할 필요로 생긴다.
+  - IOC ( Inversion Of Control ) : 제어의 역전
+
+![Clean Code For Factory](https://github.com/keepinmindsh/tech-education/blob/main/assets/cleancode_02.png)
+
+```java
+
+public class Application{
+    public static void main(String[] args){
+    
+      Meterial lineItemProduct = LineItemFactory.makeLineItem("AMaterial");
+    
+      OrderProcess order = new OrderProcess();
+    
+      order.setLineItem(lineItemProduct);
+    
+      order.execute();
+    }
+}
+
+
+public class LineItemFactory{
+    public static Meterial makeLineItem(String type){
+        switch(type){
+            case "AMaterial" : 
+              return new AMeterial();
+            case "BMaterial" : 
+              return new BMeterial();
+        }
+    }
+}
+
+class OrderProcess{
+    private Meterial lineItem;
+    
+    public void setLineItem(Meterial lineItem){
+      this.lineItem = lineItem;
+    }
+    
+    public void execute(){
+      LineItem lineItem = LineItem.getProduct();
+    }
+}
+```
+
 # 의존성의 주입 (Injection)
 
 # 확장 

@@ -272,7 +272,10 @@ public class Front implements PrinterElement {
 }
 ```
 
-#### 객체지향 - 디미터의 법칙 
+#### 객체지향 - [디미터의 법칙](https://dl.acm.org/doi/10.1145/62084.62113) 
+
+##### Don’t Talk to Strangers
+##### Principle of least knowledge(최소 지식 원칙)
 
 모듈은 자신이 조작하는 객체의 속사정을 몰라야 한다는 법칙이다. 클래스의 성향이 자료구자나 객체냐에 따라 달라짐. 
 객체로 고려하여 작성된 코드 일 경우, 추상적일 필요가 있음.   
