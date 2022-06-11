@@ -12,7 +12,7 @@ public class Initialization {
 
     }
 
-    public void SampeMethod(){
+    public void SampleMethod(){
         int val = 1000;
     }
 }
